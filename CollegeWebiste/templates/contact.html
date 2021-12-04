@@ -6,4 +6,37 @@ Contact
 
 {% block body %}
 
+<div class="container-fluid my=4" >
+    <img src="/static/images/college_header.png">
+    <h2 class="text-center">
+    Contact Us
+    </h2>
+    <h3 class="text-center">Pradnya Niketan Education Society Pune's <br>N K Orchid College Of Engineering & Technology, Solapur</h3>
+</div>
+<form>
+<div class="container text=center">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your name here">
+    </div>
+
+    <div class="mb-3">
+        <label for="emailid" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="emailid"  name="emailid" placeholder="name@example.com">
+    </div>
+
+    <div class="mb-3">
+        <label for="phoneno" class="form-label">Your Phone No</label>
+        <input type="text" class="form-control" id="phoneno" name="phoneno" placeholder="Your name here">
+    </div>
+
+    <div class="mb-3">
+        <label for="remarks" class="form-label">Enter your Suggestions/Remarks</label>
+        <textarea class="form-control" id="remarks" name="remarks" rows="3"></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="Reset"> Reset </button> <button class="btn btn-primary" type="submit"> Submit </button>
+</div>
+</form>
+
 {% endblock body %}
