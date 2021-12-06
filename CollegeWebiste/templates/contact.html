@@ -6,15 +6,11 @@ Contact
 
 {% block body %}
 
-<div class="container-fluid my=4" >
-    <img src="/static/images/college_header.png">
-    <h2 class="text-center">
-    Contact Us
-    </h2>
-    <h3 class="text-center">Pradnya Niketan Education Society Pune's <br>N K Orchid College Of Engineering & Technology, Solapur</h3>
-</div>
-<form>
-<div class="container text=center">
+<div class="container mb-3 py=4" >
+    <img src="/static/images/college_header.png" width="900" height="200">
+    <h1 class="text-center">Contact Us</h1>
+    <form method="post" action="">
+        {% csrf_token %}
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Your name here">
@@ -27,7 +23,7 @@ Contact
 
     <div class="mb-3">
         <label for="phoneno" class="form-label">Your Phone No</label>
-        <input type="text" class="form-control" id="phoneno" name="phoneno" placeholder="Your name here">
+        <input type="text" class="form-control" id="phoneno" name="phoneno" placeholder="Your phone number here">
     </div>
 
     <div class="mb-3">
